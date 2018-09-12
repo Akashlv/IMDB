@@ -1,0 +1,6 @@
+projectUtils\PropertyFile.class
+projectUtils\dataBase.class
+pageObjects\BaseClassForPageObjects.class
+pageActions\imdbHomePageActions.class
+pageObjects\imbdHomePage.class
+testScripts\imdb.class
