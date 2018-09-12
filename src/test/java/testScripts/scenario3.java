@@ -46,7 +46,7 @@ public class scenario3 extends BaseClassForPageObjects {
 		dataBase.connectToDB(appPropertyFile.getProperty("connectDBUrl"));
 		dataBase.createTableInDB(url, DBname, tabelName, createTableQuery);
 
-		for (int i = 1; i < 250; i++) {
+		for (int i = 1; i < 251; i++) {
 
 			String name = imbdTop250MoviesActions.getmovie(i);
 			String filmRating = imbdTop250MoviesActions.getrating(i);
