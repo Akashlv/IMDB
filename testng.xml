@@ -5,7 +5,7 @@
     <classes>
       <class name="testScripts.scenario1"/>
       <class name="testScripts.scenario2"/>
-      <class name="testScripts.scenario3"/>
+      <class name="testScripts.scenario2"/>
       <class name="testScripts.scenario4"/>
     </classes>
   </test> <!-- Test -->
