@@ -53,7 +53,7 @@ public class scenario3 extends BaseClassForPageObjects {
 			String yearOfRelease = imbdTop250MoviesActions.getYearOfRelease(i);
 			Reporter.log(i + ". " + name + " released in : " + yearOfRelease + " rating is : " + filmRating, true);
 
-			String filmName = name.replaceAll("'", "");
+			String filmName = name.replaceAll("'","");
 
 			String insertIntoTableQuery = "INSERT INTO " + tabelName + "(id,filmname,rating,yearofrelease) VALUES ('" + i + "','" + filmName + "','" + filmRating + "','" + yearOfRelease + "');";
 			dataBase.inserIntoDB(url, DBname, tabelName, insertIntoTableQuery);
