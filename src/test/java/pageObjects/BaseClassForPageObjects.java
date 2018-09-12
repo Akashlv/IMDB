@@ -10,8 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import projectUtils.PropertyFile;
 
@@ -22,7 +22,7 @@ public class BaseClassForPageObjects {
 
 	public static WebDriver driver;
 
-	@BeforeSuite
+	@BeforeClass
 	@SuppressWarnings("deprecation")
 	public static void openBrowerAndNavigate() throws InterruptedException, IOException {
 
@@ -74,7 +74,7 @@ public class BaseClassForPageObjects {
 
 	}
 
-	@AfterSuite
+	@AfterClass
 	// Close the driver
 	public static void tearDown() {
 
